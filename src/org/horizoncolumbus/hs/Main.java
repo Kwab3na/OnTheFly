@@ -17,22 +17,14 @@ public class Main {
 
 		for(int i = 0; i < Row; i++) {
 			System.out.print("Enter Array Number: ");
-			numbers[i][i] = myObj.nextInt();
-		}
-
-		for(int j = 0; j < Column; j++){
-			System.out.print("Enter Array Number: ");
-			numbers[j][j] = myObj.nextInt();
-		}
-
-		int sum = 0;
-
-		for(int i = 0; i < Row; i++){
+			numbers[i][Column] = myObj.nextInt();
 			for(int j = 0; j < Column; j++){
-				sum = sum + numbers[i][j];
+				System.out.print("Enter Array Number: ");
+				numbers[j][Row] = myObj.nextInt();
+				System.out.print(numbers[i][j]);
 			}
-
-			System.out.println(sum);
 		}
+
+
 	}
 }
