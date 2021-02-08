@@ -17,11 +17,9 @@ public class Main {
 
 		for(int i = 0; i < Row; i++) {
 			System.out.print("Enter Array Number: ");
-			numbers[i][Column] = myObj.nextInt();
-			for(int j = 0; j < Column; j++){
-				System.out.print("Enter Array Number: ");
-				numbers[j][Row] = myObj.nextInt();
-				System.out.print(numbers[i][j]);
+			numbers[Row][Column] = myObj.nextInt();
+			for(int j = 0; j < Column; j++){2
+				System.out.print(numbers[Row][Column] + " ");
 			}
 		}
 
